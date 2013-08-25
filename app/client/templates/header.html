@@ -1,0 +1,13 @@
+<ul class="nav navbar-nav menus">
+    {{#each menus}}
+        <li>
+            <a href="{{link}}" class="menu">{{name}}</a>
+        </li>
+    {{/each}}
+    <li id="new-menu" style="display:none"><a class="icon-plus icon-large"></a></li>
+</ul>
+<ul class="nav navbar-nav navbar-right">
+    <li><a id="enable-edit" class="disable-edit btn btn-warning" style="display:none">Edit</a></li>
+    <li><a id="user-login" class="user-login btn btn-default" style="display:none">Sign In</a></li>
+    <li><a id="user-logout" class="user-logout btn btn-default" style="display:none">Sign Out</a></li>
+</ul>

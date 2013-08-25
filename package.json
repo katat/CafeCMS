@@ -6,10 +6,17 @@
         "socket.io": "latest",
         "express": "latest",
         "mongoose": "latest",
+        "passport": "latest",
+        "passport-local": "latest",
+        "consolidate": "latest",
         "jade": "latest",
+        "handlebars": "latest",
         "mocha": "latest",
         "supertest": "latest",
-        "should": "latest"
+        "should": "latest",
+	    "hallo": "latest",
+        "backbone": "latest",
+        "requirejs": "latest"
     },
     "author": "Kata"
 }

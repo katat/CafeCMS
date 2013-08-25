@@ -6,7 +6,8 @@
 var mongoose = require('mongoose');
 var pageSchema = mongoose.Schema({
     url: String,
-    body: String
+    title: String,
+    content: String
 })
 
 var PageModel = mongoose.model('Page', pageSchema);
