@@ -28,7 +28,7 @@ require.config({
 	paths : {
         config : '/configs',
 		jquery : '/lib/jquery',
-        'jquery.ui' : '/lib/jquery-ui',
+        'jquery.ui' : '/lib/hallo-prod/deps/jquery-ui-1.10.2.min',
         'jquery.cookie' : '/lib/jquery-cookie/jquery.cookie',
 		underscore : '/lib/underscore',
 		backbone : '/lib/backbone',
