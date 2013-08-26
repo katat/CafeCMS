@@ -8,6 +8,8 @@ define(['backbone', 'config'], function(Backbone, Config){
         idAttribute: '_id',
         sync: function(method, model, options){
             options.url = "/rest/header";
+            if(Backbone.getUser() != null)
+                options.headers = {apikey:Backbone.getUser().apikey};
             return Backbone.sync(method, model, options);
         },
         urlRoot: Config.restAPI +'/header'

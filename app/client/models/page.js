@@ -9,7 +9,7 @@ define(['backbone', 'config'], function(Backbone, Config){
         sync: function(method, model, options){
             options.url = "/rest/pages/" + this.get('url');
             if(Backbone.getUser() != null)
-                (options.headers = {apikey:Backbone.getUser().apikey});
+                options.headers = {apikey:Backbone.getUser().apikey};
             return Backbone.sync(method, model, options);
         },
         urlRoot: Config.restAPI +'/pages',

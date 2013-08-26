@@ -14,9 +14,10 @@
         "mocha": "latest",
         "supertest": "latest",
         "should": "latest",
-	    "hallo": "latest",
+	      "hallo": "latest",
         "backbone": "latest",
-        "requirejs": "latest"
+        "requirejs": "latest",
+        "pkginfo":"latest"
     },
     "author": "Kata"
 }
