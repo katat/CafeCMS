@@ -90,8 +90,9 @@
             return;
           }
           if (!_this.originalHref) {
-
+            return;
           }
+          return element.attr('href', _this.originalHref);
         });
         return this._trigger("disabled", null);
       },
@@ -103,7 +104,8 @@
           if (!element.is('a[href]')) {
             return;
           }
-          return _this.originalHref = element.attr('href');
+          _this.originalHref = element.attr('href');
+          return element.removeAttr('href');
         });
         this.element.attr("contentEditable", true);
         if (!jQuery.parseHTML(this.element.html())) {

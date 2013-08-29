@@ -1,0 +1,8 @@
+@import url("/lib/bootstrap/dist/css/bootstrap.min.css");
+@import url("/lib/hallo-prod/jquery-ui-bootstrap/css/custom-theme/jquery-ui-1.8.16.custom.css");
+@import url("/lib/hallo-prod/fontawesome/css/font-awesome.css");
+
+[contenteditable="true"]{
+  border-style:dotted;
+  border-color: #f0ad4e;
+}

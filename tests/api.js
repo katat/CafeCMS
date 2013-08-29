@@ -111,6 +111,20 @@ describe('API tests', function(){
             describe('change page url', function(){
 
             })
+
+            describe('random test', function(){
+                it('reference test', function(done){
+                    var t = {
+                        a:1,
+                        b:2
+                    };
+                    function test(t){
+                        t.a++;
+                    }
+                    test(t);
+                    console.log(t);
+                })
+            })
         })
     });
 

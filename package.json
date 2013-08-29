@@ -12,6 +12,7 @@
         "jade": "latest",
         "handlebars": "latest",
         "mocha": "latest",
+        "jasmine-node": "latest",
         "supertest": "latest",
         "should": "latest",
 	      "hallo": "latest",
