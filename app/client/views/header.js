@@ -15,6 +15,7 @@ define(['backbone', 'views/base/partial', 'handlebars', 'hallo', 'text!templates
         onRender : function(){
             this.$el.html(this.template(this.model.toJSON()));
             this.menuPlaceholder = this.$el.find('ul.menus li a.menu');
+            this.menuRemoveBtns = this.$el.find('ul.menus li a.remove-menu');
             this.editBtn = this.$el.find('#enable-edit');
             this.userLoginBtn = this.$el.find('#user-login');
             this.userLogoutBtn = this.$el.find('#user-logout');
@@ -68,18 +69,19 @@ define(['backbone', 'views/base/partial', 'handlebars', 'hallo', 'text!templates
                 toolbar: 'halloToolbarInstant',
                 editable: true
             });
-            this.$el.find('ul.menus li.menu').each(function(index, elm){
-                var removeElm = $("<i class='icon-minus'/>");
-                removeElm.click(function(){
+            this.$el.find('ul.menus li').each(function(index, elm){
+                var removeMenu = $(elm).find('a.remove-menu');
+                removeMenu.show();
+                $(removeMenu).click(function(){
                     $(elm).remove();
                 })
-                $(elm).append(removeElm);
             });
             this.$el.find('ul.menus li#new-menu').show();
         },
         disableEdit: function(){
             this.menuPlaceholder.hallo({editable:false});
             this.$el.find('ul.menus li#new-menu').hide();
+            this.menuRemoveBtns.hide();
         },
         addNewMenu : function(){
             var newMenuElm = $("<li><a class='menu'>new</a></li>");
@@ -99,8 +101,8 @@ define(['backbone', 'views/base/partial', 'handlebars', 'hallo', 'text!templates
                     .addClass('disable-edit')
                     .text('Edit');
                 var menus = [];
-                this.$el.find('ul.menus li a.menu').each(function(index, value){
-                    var menuElm = $(value);
+                this.$el.find('ul.menus li a.menu').each(function(index, elm){
+                    var menuElm = $(elm);
                     var menu = {
                         name: menuElm.text(),
                         link: menuElm.attr('href')

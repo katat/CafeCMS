@@ -1,8 +1,9 @@
 <ul class="nav navbar-nav menus">
     {{#each menus}}
-        <li>
-            <a href="{{link}}" class="menu">{{name}}</a>
-        </li>
+    <li>
+        <a href="{{link}}" class="menu">{{name}}</a>
+        <a class="remove-menu btn btn-default" style="display:none">remove</a>
+    </li>
     {{/each}}
     <li id="new-menu" style="display:none"><a class="icon-plus icon-large"></a></li>
 </ul>
