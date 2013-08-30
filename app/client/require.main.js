@@ -35,7 +35,7 @@ require.config({
 		text : '/lib/text/text',
 		'knowledge.autocomplete': '/lib/custom/knowledge_concept_autocomplete',
 		'bootstrap': '/lib/bootstrap/dist/js/bootstrap.min',
-        'hallo' : '/lib/hallo-prod/hallo-min',
+        'hallo' : '/lib/hallo-prod/hallo',
         'rangy' : '/lib/rangy/rangy-core',
         'handlebars' : '/lib/handlebars'
 	}

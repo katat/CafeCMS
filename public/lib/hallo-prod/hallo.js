@@ -54,6 +54,8 @@
       _init: function() {
         if (this.options.editable) {
           return this.enable();
+        } else if (this.options.destroy) {
+          return this.destroy();
         } else {
           return this.disable();
         }

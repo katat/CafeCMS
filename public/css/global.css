@@ -3,6 +3,10 @@
 @import url("/lib/hallo-prod/fontawesome/css/font-awesome.css");
 
 [contenteditable="true"]{
-  border-style:dotted;
+  border-style: dotted;
+  border-color: #f0ad4e;
+}
+.enable-edit{
+  border-style: dotted;
   border-color: #f0ad4e;
 }
