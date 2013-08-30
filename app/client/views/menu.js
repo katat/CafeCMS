@@ -62,10 +62,12 @@ define(['views/base/append', 'views/menu.modal', 'jquery', 'handlebars', 'text!t
             this.$el.removeClass('enable-edit');
             AppendView.prototype.disableEdit.apply(this, arguments);
         },
-        showModal: function(){
+        showModal: function(e){
             if(!this.toShowModal)
                 return;
             this.getInnerView(this.modalPlaceholder).showModal();
+            e.preventDefault();
+            return false;
         }
     })
 
