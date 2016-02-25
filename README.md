@@ -13,5 +13,5 @@ The goals are:
 * Flexibly customize the looks of pages when needed
 * Fast and Compatible on mobile or desktop devices
 
-For the demo, go to http://122.128.109.167:3700, and sign in using **admin** for both the username and password.
+
 
